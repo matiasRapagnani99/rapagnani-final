@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../img/marmolado.jpg);
+}
+
+body ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+main header p {
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(255, 195, 172, 0.5);
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+
+
+}
+
+header h1 {
+    font-size: 60px;
+    background-color: rgb(255, 195, 172, 0.5);
+    margin: 30px;
+    text-align: center;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+    border-radius: 20px;
+    font-family: 'Amatic SC', cursive;
+    text-decoration: underline;
+}
+
+
+nav ul {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 195, 172, 0.5);
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+
+
+}
+
+
+
+ul li {
+    list-style-type: none;
+}
+
+.containerImg {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    grid-template-areas: "cadenas aros"
+        "combo1 combo2";
+    background-color: rgb(207, 204, 204, 0.4);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+
+
+}
+
+.cadenas {
+    grid-area: cadenas;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+}
+
+.aros {
+    grid-area: aros;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+}
+
+.combo1 {
+    grid-area: combo1;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+
+}
+
+.combo2 {
+    grid-area: combo2;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+
+}
+
+img {
+    width: 90%;
+    height: 90%;
+
+}
+
+main p {
+    background-color: rgb(212, 212, 212, 0.5);
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+}
+
+h2 {
+    text-align: center;
+    background-color: rgb(255, 195, 172, 0.5);
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+}
+
+section {
+    background-color: rgb(212, 212, 212, 0.5);
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+
+}
+
+.containerF {
+
+    grid-template-areas: "ubicacion redes pagos";
+    grid-template-columns: 33% 33% 33%;
+    display: grid;
+    height: 205px;
+    margin: 20px;
+    justify-content: space-evenly;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+}
+
+.ubicacion {
+    grid-area: ubicacion;
+
+}
+
+strong {
+    background-color: rgb(255, 195, 172, 0.5);
+
+}
+
+.redes {
+    grid-area: redes;
+    margin-left: 35px;
+    height: 20px;
+
+
+}
+
+.imgIns {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+
+}
+
+.imgF {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+
+}
+
+
+.pagos {
+    grid-area: pagos;
+    justify-self: end;
+    height: 20px;
+
+
+
+}
+
+.visa {
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+
+
+}
+
+.mae {
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+
+}
+
+.am {
+    height: 50px;
+    width: 50px;
+
+    margin-left: 30px;
+}
+
+.contacto {
+    display: none;
+}
+
+
+
+@media screen and (min-width:768px) {
+    main header p {
+        font-size: 30px;
+    }
+
+    header h1 {
+        font-size: 100px;
+    }
+
+    nav ul {
+        font-size: 30px;
+    }
+
+    main p {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    section {
+        font-size: 25px;
+    }
+
+    .contacto {
+        display: none;
+    }
+
+    .redes {
+
+        margin-left: auto;
+
+
+    }
+
+    .pagos {
+        margin-right: 30px;
+    }
+
+    .ubicacion {
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    header h1 {
+        font-size: 80px;
+        margin: 30px;
+        display: inline-block;
+        text-align: start;
+
+    }
+
+    nav ul :hover {
+        font-size: 35px;
+
+    }
+
+    main p {
+        font-size: 30px;
+        margin: 50px;
+
+    }
+
+    .containerImg {
+
+        grid-template-areas: "cadenas aros combo1 combo2";
+
+    }
+
+    .contacto {
+        display: inline-block;
+        box-shadow: none;
+
+    }
+
+    .imgX {
+        height: 50px;
+        width: 50px;
+    }
+
+    .containerF {
+
+
+        grid-template-areas: "ubicacion contacto redes pagos";
+        grid-template-columns: 25% 25% 25% 25%;
+
+    }
+
+    .ubicacion {
+        font-size: 25px;
+
+    }
+
+    .redes {
+        font-size: 25px;
+    }
+
+    .pagos {
+        font-size: 25px;
+    }
+
+    
+}
+
+/*productos*/
+.containerP {
+
+
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    grid-template-areas: "imgP1 imgP2"
+        "pp1  pp2"
+        "imgP3  imgP4"
+        "pp3  pp4";
+    background-color: rgba(116, 116, 116, 0.4);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+
+
+
+
+.imgP1 {
+    grid-area: imgP1;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+
+
+
+
+}
+
+.pp1 {
+    grid-area: pp1;
+
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+    background-color: rgb(255, 195, 172, 0.5);
+
+}
+
+.imgP2 {
+    grid-area: imgP2;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+
+
+}
+
+.pp2 {
+    grid-area: pp2;
+    background-color: rgb(255, 195, 172, 0.5);
+}
+
+.imgP3 {
+    grid-area: imgP3;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+
+}
+
+.pp3 {
+    grid-area: pp3;
+    background-color: rgb(255, 195, 172, 0.5);
+}
+
+.imgP4 {
+    grid-area: imgP4;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(73, 73, 73);
+}
+
+.pp4 {
+    grid-area: pp4;
+    background-color: rgb(255, 195, 172, 0.5);
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .containerP {
+
+
+        
+        gap: 2rem;
+        
+        grid-template-areas: "imgP1 imgP2 imgP3 imgP4"
+                              "pp1  pp2   pp3   pp4";
+            
+        background-color: rgba(116, 116, 116, 0.4);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+
+    }
+}
+/*contacto*/
+.divP2{
+    display: grid; 
+    grid-template-columns: 40% 40%;
+    grid-template-areas: "formulario redes"
+                          ;
+                          justify-content: space-evenly;
+                          background-color: rgba(116, 116, 116, 0.4);  
+                          border-radius: 20px;
+                          margin: 3px;
+                          margin-top: 20px;             
+                          
+}
+.containerFr{
+    width: 80%;
+    margin-left: 50px;
+    grid-area: formulario;
+    height: 100%;
+    
+    
+}
+.redesContacto{
+    grid-area: redes;
+    margin-bottom: 30px;
+}
+.fb {
+    height: 60px;
+    width: 60px;
+    margin:auto;
+    margin-top: 40px;
+
+}
+
+.ins{
+    height: 60px;
+    width: 60px;
+    margin: auto;
+
+}
+fieldset{
+    background-color: rgb(255, 195, 172, 0.5);
+}
+@media screen and (min-width:768px) {
+
+    .divP2{
+        font-size: 25px;
+    }
+    .fb {
+        height: 70px;
+        width: 70px;
+        
+    
+    }
+    
+    .ins{
+        height: 70px;
+        width: 70px;
+        
+    }
+}
