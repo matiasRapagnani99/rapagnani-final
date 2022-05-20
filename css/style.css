@@ -71,7 +71,7 @@ ul li {
 
 }
 
-.cadenas {
+.cadenas  {
     grid-area: cadenas;
     border-radius: 20px;
     box-shadow: 0 10px 10px rgb(73, 73, 73);
@@ -280,8 +280,12 @@ strong {
     .containerImg {
 
         grid-template-areas: "cadenas aros combo1 combo2";
+        cursor: pointer;
 
     }
+
+    
+    
 
     .contacto {
         display: inline-block;
