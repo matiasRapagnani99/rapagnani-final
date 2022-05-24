@@ -40,7 +40,7 @@ header h1 {
     text-decoration: underline;
 }
 
-
+/*
 nav ul {
     font-size: 20px;
     display: flex;
@@ -50,7 +50,11 @@ nav ul {
 
 
 }
-
+*/
+.bg-propio{
+    background-color: rgb(255, 195, 172, 0.5);
+   
+}
 
 
 ul li {
@@ -400,6 +404,8 @@ strong {
 
 @media screen and (min-width:1024px) {
 
+    
+    
     .containerP {
 
 
