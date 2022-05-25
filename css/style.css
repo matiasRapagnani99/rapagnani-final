@@ -482,3 +482,31 @@ fieldset{
         
     }
 }
+/*html boots*/
+.img-b{
+    width: 100%;
+    height:60%;
+}
+.bg-propio{
+    background-color: rgb(199, 199, 199) !important ;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.carousel-inner{
+    max-height: 39rem;
+    object-fit:cover;
+}
+.p-diseño{
+    margin-top: 20px;
+    background-color: rgb(199, 199, 199);
+    border-radius: 4rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.redes{
+    text-align: left;
+}
