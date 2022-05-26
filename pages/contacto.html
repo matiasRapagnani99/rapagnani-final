@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link boostrap-->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +25,7 @@
 
     <main>
         <header>
-            <p class="animate__animated  animate__fadeInLeft" >binevenid@ a nustra tienda online!!</p>
+            <p class="animate__animated  animate__fadeInLeft">binevenid@ a nustra tienda online!!</p>
             <h1>
                 Tan solo Brilla
             </h1>
@@ -74,7 +75,7 @@
                             Completa tu nombre
                         </label>
                         <div>
-                            <input type="text" name="nombre" placeholder="Completa tu nombre">
+                            <input class="tamañoF" type="text" name="nombre" placeholder="Completa tu nombre">
                         </div>
                     </div>
                     <div>
@@ -82,14 +83,14 @@
                             Completa email
                         </label>
                         <div>
-                            <input type="email" name="email" placeholder="Completa tu email">
+                            <input class="tamañoF" type="email" name="email" placeholder="Completa tu email">
                         </div>
                         <div>
                             <label for="telefono">
                                 Telefono (opcional)
                             </label>
                             <div>
-                                <input type="telefono" name="telefono" placeholder="Telefono">
+                                <input class="tamañoF" type="telefono" name="telefono" placeholder="Telefono">
                             </div>
 
                         </div>
@@ -110,7 +111,7 @@
                                 Mensaje
                             </label>
                             <div>
-                                <input type="mensaje" name="mensaje" placeholder="Escribi tu mensaje">
+                                <input class="tamañoF" type="mensaje" name="mensaje" placeholder="Escribi tu mensaje">
                             </div>
 
                         </div>
@@ -130,7 +131,7 @@
                 <h2>Redes Sociales</h2>
                 <ul>
                     <li class="ins">
-                        <a href="https://www.instagram.com/tansolobrilla_/?hl=es" target="_blank"><img
+                        <a class="textIns" href="https://www.instagram.com/tansolobrilla_/?hl=es" target="_blank"><img
                                 src="../icons/instagram (3).png" alt="sdad">tansolobrilla_</a>
                     </li>
 
@@ -151,31 +152,32 @@
 
     <footer>
         <div class="containerF">
-            <div class="ubicacion"><strong> ¿Donde nos ubicamos?</strong>
+            <div class="ubicacion"><strong> Ubicacion</strong>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.056180598463!2d-58.54387198477237!3d-34.52680458047944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0bcdd2acac1%3A0xe312cdf00c92e6d7!2s9%20de%20Julio%203727%2C%20B1606%20Carapachay%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1652647710336!5m2!1ses-419!2sar"
                     width="150" height="150" style="border:solid rgb(138, 138, 138, 0.5);" allowfullscreen=""
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <div class="redes"><strong> Redes Sociales</strong>
+            <div class="redes"><strong> Redes </strong>
                 <ul>
                     <li>
                         <img class="imgIns" src="../icons/instagram (3).png" alt="icono instagram">
                         <a href="https://www.instagram.com/tansolobrilla_/?hl=es" target="_blank">tansolobrilla_</a>
                     </li>
                     <li>
-                        <img class="imgF" src="../icons/facebook (3).png" alt="">
+                        <img class="imgF" src="../icons/facebook (3).png" alt="icono facebook">
                         <a href="https://www.facebook.com/" target="_blank">_tansolobrilla</a>
                     </li>
                 </ul>
             </div>
             <section class="contacto"> <strong> Contacto</strong>
                 <ul>
-                    <li><img class="imgX" src="../icons/gmail.png" alt="gmail">
+                    <li><img class="imgX" src="../icons/gmail.png" alt="icono gmail">
                         <a href="">TansoloBrilla@gmail.com</a>
                     </li>
-                    <li><img class="imgX" src="../icons/whatsapp(1).png" alt="">
-                        <a href="">11 3233-9457</a>
+                    <li><img class="imgX" src="../icons/whatsapp(1).png" alt="icono whatsapp">
+                        <a href="">11-3233-9457</a>
                     </li>
                 </ul>
 
@@ -183,20 +185,30 @@
             <div class="pagos">
                 <strong> Formas de pago</strong>
                 <ul>
-                    <li><img class="visa" src="../icons/visa (1).png" alt=""></li>
-                    <li><img class="am" src="../icons/american-express.png" alt=""></li>
-                    <li><img class="mae" src="../icons/maestro.png" alt=""></li>
+                    <li>
+                        <img class="visa" src="../icons/visa (1).png" alt="icono visa">
+                    </li>
+                    <li>
+                        <img class="am" src="../icons/american-express.png" alt="icono american">
+                    </li>
+                    <li>
+                        <img class="mae" src="../icons/maestro.png" alt="icono maestro">
+                    </li>
                 </ul>
 
             </div>
         </div>
     </footer>
-    <section> <a class="animate__animated  animate__fadeInLeft" href="https://www.instagram.com/matias1rapagnani/ target=_blank"> © 2022 Matias Rapagnani, Todos los
-            derechos reservados.</a> </section>
+    <section class="derechos" > <a class="animate__animated  animate__fadeInLeft"
+            href="https://www.instagram.com/matias1rapagnani/ target=_blank"> © 2022 Matias Rapagnani, Todos los
+            derechos reservados.</a>
+    </section>
 
 
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
 
 
 </body>
