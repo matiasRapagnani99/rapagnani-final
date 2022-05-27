@@ -264,7 +264,7 @@ strong {
 
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1024px){
     
 
     header h1 {
@@ -312,6 +312,7 @@ strong {
         grid-template-areas: "ubicacion contacto redes pagos";
         grid-template-columns: 25% 25% 25% 25%;
         height: 310px;
+        
 
     }
 
@@ -378,6 +379,7 @@ strong {
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
+    
 
 }
 
@@ -456,8 +458,10 @@ strong {
         padding: 20px;
         margin: 20px;
         border-radius: 20px;
+        height: 700px;
 
     }
+    
 }
 /*contacto*/
 .divP2{
@@ -589,3 +593,67 @@ fieldset{
 .redes{
     text-align: left;
 }
+
+/*carrito*/
+.containerTodo{
+    display:grid;
+    row-gap: 20px;
+    grid-template-areas: "paso1"
+                         "form1"
+                         "paso2"
+                         "form2"
+                         "paso3"
+                         "paso4";
+                         list-style-type: none;
+
+                         
+    }
+    .containerpasos{
+        grid-area: paso1;
+        display:flex;
+        margin: auto;
+        padding: auto;
+        border-radius: 20px;
+        margin-top: 10px;
+        width:30%;
+        font-size: 20px;
+        background-color: rgb(255, 195, 172, 0.5);       
+    }
+    .form1{
+        grid-area:form1;
+        
+    }
+    .containe2rpasos{
+        grid-area:paso2;
+        display:flex;
+        justify-content: center;
+        font-size: 20px;
+        background-color: rgb(255, 195, 172, 0.5);
+        margin: auto;
+         width:40%;
+        border-radius: 20px;
+        
+    }
+    .form2{
+        grid-area: form2;
+    }
+
+    .paso3{
+        grid-area: paso3;
+        display:flex;
+        justify-content: center;
+        font-size: 20px;
+        background-color: rgb(255, 195, 172, 0.5);
+        border-radius: 20px;     
+    }
+    .paso4{
+        grid-area: paso4;
+        display:flex;
+        justify-content: center;
+        font-size: 20px;
+        background-color: rgb(255, 195, 172, 0.5);
+        
+      border-radius: 20px;   
+                    
+    }
+    
