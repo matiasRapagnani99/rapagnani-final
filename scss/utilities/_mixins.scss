@@ -1,0 +1,11 @@
+@mixin medidas ($height, $widht, $margin) {
+    height: $height;
+    width: $widht;
+    margin: $margin;
+    
+}
+@mixin grid ($grid, $padding, $margin){
+    display:$grid;
+    padding: $padding;
+    margin: $margin;
+}

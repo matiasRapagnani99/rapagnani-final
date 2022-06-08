@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*index*/
 main p {
   background-color: #cfcccc;
@@ -111,23 +112,22 @@ footer .containerF .redes .imgF {
 
 footer .containerF .pagos {
   -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-column: 4;
   grid-area: pagos;
-  -ms-grid-column-align: end;
       justify-self: end;
   height: 20px;
 }
 
-footer .containerF .pagos .visa {
+footer .containerF .pagos .visa, footer .containerF .pagos .mae, footer .containerF .pagos .am {
   height: 50px;
   width: 50px;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 footer .containerF .pagos .mae {
   height: 50px;
   width: 50px;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 footer .containerF .pagos .am {
@@ -156,16 +156,15 @@ footer .containerF .contacto {
   }
   footer .containerF .contacto {
     display: none;
-    color: aqua;
   }
   footer .containerF .pagos {
     margin-right: 30px;
   }
   footer .containerF .ubicacion {
-    margin-left: 30px;
+    margin-right: 30px;
   }
   footer .containerF iframe {
-    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -192,57 +191,268 @@ footer .containerF .contacto {
   }
 }
 
-/*
-footer {
-    .containerF {
-
-
-        grid-template-areas: "ubicacion contacto redes pagos";
-        grid-template-columns: 25% 25% 25% 25%;
-        height: 250px;
-
-        .contacto {
-            display: block;
-            box-shadow: none;
-            margin-left: 80px;
-
-            .imgX {
-                height: 60px;
-                width: 60px;
-                margin: 10px;
-            }
-
-        }
-
-        .pagos {
-
-            .visa {
-                height: 60px;
-                width: 60px;
-
-
-
-            }
-
-            .mae {
-                height: 60px;
-                width: 60px;
-
-
-            }
-
-            .am {
-                height: 60px;
-                width: 60px;
-
-            }
-
-        }
-    }
-
-    
+footer .containerF {
+      grid-template-areas: "ubicacion contacto redes pagos";
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  height: 250px;
 }
-*/
+
+footer .containerF .contacto {
+  display: block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-left: 80px;
+}
+
+footer .containerF .contacto .imgX {
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+}
+
+footer .containerF .pagos .visa, footer .containerF .pagos .mae, footer .containerF .pagos .am {
+  height: 60px;
+  width: 60px;
+}
+
+/*productos*/
+main .containerP {
+  display: -ms-grid;
+  display: grid;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  gap: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      grid-template-areas: "imgP1 imgP2" "pp1  pp2" "imgP3  imgP4" "pp3  pp4";
+}
+
+main .containerP .imgT {
+  height: 100%;
+  width: 100%;
+}
+
+main .containerP .imgP1, main .containerP .imgP2, main .containerP .imgP3, main .containerP .imgP4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: imgP1;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 10px #494949;
+          box-shadow: 0 10px 10px #494949;
+}
+
+main .containerP .pp1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: pp1;
+}
+
+main .containerP .imgP2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: imgP2;
+}
+
+main .containerP .pp2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: pp2;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main .containerP .imgP3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: imgP3;
+}
+
+main .containerP .pp3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: pp3;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main .containerP .imgP4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: imgP4;
+}
+
+main .containerP .pp4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: pp4;
+}
+
+@media screen and (min-width: 1024px) {
+  main .containerP {
+    display: -ms-grid;
+    display: grid;
+    padding: 20px;
+    margin: 20px;
+    -ms-grid-columns: 20% 20% 20% 20%;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-areas: "imgP1 imgP2 imgP3 imgP4" "pp1  pp2   pp3   pp4";
+    background-color: #cfcccc;
+    border-radius: 20px;
+    height: 700px;
+    overflow: auto;
+  }
+  main .containerP .imgP1, main .containerP .imgP2, main .containerP .imgP3, main .containerP .imgP4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: imgP1;
+  }
+  main .containerP .pp1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: pp1;
+  }
+  main .containerP .imgP2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: imgP2;
+  }
+  main .containerP .pp2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: pp2;
+  }
+  main .containerP .imgP3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: imgP3;
+  }
+  main .containerP .pp3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: pp3;
+  }
+  main .containerP .imgP4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: imgP4;
+  }
+  main .containerP .pp4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    grid-area: pp4;
+  }
+}
+
+/*mobile*/
+main .divP2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "formulario redes";
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #cfcccc;
+  border-radius: 20px;
+  margin: 3px;
+  margin-top: 20px;
+}
+
+main .divP2 .containerFr {
+  width: 100%;
+  margin-left: 50px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: formulario;
+  height: 100%;
+  margin: 1rem;
+}
+
+main .divP2 .containerFr .tamañoF {
+  width: 100%;
+}
+
+main .divP2 .containerFr fieldset {
+  background-color: #ffc3ac;
+}
+
+main .divP2 .redesContacto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: redes;
+}
+
+main .divP2 .redesContacto h2 {
+  margin-bottom: 30px;
+  margin-left: 2rem;
+}
+
+main .divP2 .redesContacto ul .fb {
+  height: 60px;
+  width: 60px;
+  margin-left: 2rem;
+  margin-top: 40px;
+}
+
+main .divP2 .redesContacto ul .ins {
+  height: 60px;
+  width: 60px;
+  margin-left: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  main .divP2 {
+    font-size: 25px;
+  }
+  main .divP2 .redesContacto h2 {
+    margin-left: 6rem;
+    background-color: #ffc3ac;
+    display: inline;
+  }
+  main .divP2 .redesContacto ul {
+    margin-top: 50px;
+  }
+  main .divP2 .redesContacto ul li .fb {
+    height: 80px;
+    width: 80px;
+    margin-left: 6rem;
+  }
+  main .divP2 .redesContacto ul li .ins {
+    height: 80px;
+    width: 80px;
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .divP2 .containerFr {
+    width: 30rem;
+  }
+  main .divP2 .redesContacto {
+    margin-top: 1rem;
+  }
+  main .divP2 .redesContacto h2 {
+    margin-left: 8rem;
+  }
+  main .divP2 .redesContacto ul li .fb {
+    height: 100px;
+    width: 100px;
+    margin-left: 8rem;
+    margin-top: 80px;
+  }
+  main .divP2 .redesContacto ul li .ins {
+    height: 100px;
+    width: 100px;
+    margin-left: 8rem;
+  }
+}
+
 body {
   background-image: url(../img/marmolado.jpg);
 }
