@@ -10,6 +10,11 @@ main p {
   font-size: 20px;
 }
 
+main .carousel-inner {
+  -webkit-box-shadow: 0 10px 10px #494949;
+          box-shadow: 0 10px 10px #494949;
+}
+
 main header p {
   font-size: 20px;
   text-align: center;
@@ -216,6 +221,23 @@ footer .containerF .pagos .visa, footer .containerF .pagos .mae, footer .contain
   width: 60px;
 }
 
+/*nosotros*/
+main .quienes {
+  text-align: center;
+  background-color: #ffc3ac;
+  margin: 2rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 10px #494949;
+          box-shadow: 0 10px 10px #494949;
+}
+
+main div .containerImg .local {
+  border-radius: 20px;
+  width: 100%;
+  -webkit-box-shadow: 0 10px 10px #494949;
+          box-shadow: 0 10px 10px #494949;
+}
+
 /*productos*/
 main .containerP {
   display: -ms-grid;
@@ -304,7 +326,6 @@ main .containerP .pp4 {
     background-color: #cfcccc;
     border-radius: 20px;
     height: 700px;
-    overflow: auto;
   }
   main .containerP .imgP1, main .containerP .imgP2, main .containerP .imgP3, main .containerP .imgP4 {
     -ms-grid-row: 1;
@@ -451,6 +472,65 @@ main .divP2 .redesContacto ul .ins {
     width: 100px;
     margin-left: 8rem;
   }
+}
+
+/*carrito*/
+main .containerTodo .container1F, main .containerTodo .container2F {
+  text-align: center;
+  background-color: #ffc3ac;
+  border-radius: 20px;
+  margin-top: 1rem;
+  font-size: 20px;
+}
+
+main .containerTodo .form1, main .containerTodo .form2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .containerTodo .form1 form, main .containerTodo .form2 form {
+  background-color: #ffc3ac;
+  font-size: 25px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 10px #494949;
+          box-shadow: 0 10px 10px #494949;
+}
+
+main .containerTodo .form1 form fieldset legend, main .containerTodo .form2 form fieldset legend {
+  text-align: center;
+  font-size: 30px;
+}
+
+main .containerTodo .form1 form fieldset div .botones, main .containerTodo .form2 form fieldset div .botones {
+  margin: 10px;
+}
+
+main .containerTodo .form1 form fieldset div .botones:hover, main .containerTodo .form2 form fieldset div .botones:hover {
+  background-color: burlywood;
+}
+
+main .containerTodo .paso3 {
+  font-size: 25px;
+  background-color: #ffc3ac;
+  margin-top: 1rem;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 10px #494949;
+          box-shadow: 0 10px 10px #494949;
+}
+
+main .containerTodo .paso4 {
+  font-size: 25px;
+  background-color: #ffc3ac;
+  margin-top: 1rem;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 10px #494949;
+          box-shadow: 0 10px 10px #494949;
 }
 
 body {

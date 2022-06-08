@@ -9,3 +9,11 @@
     padding: $padding;
     margin: $margin;
 }
+@mixin formulario ($size, $back-c, $mg-t,$text-aling,$border,$sombra){
+    font-size: $size;
+    background-color: $back-c;
+    margin-top: $mg-t;
+    text-align: $text-aling;
+    border-radius: $border;
+    box-shadow: $sombra;
+}

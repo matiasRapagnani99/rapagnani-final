@@ -9,6 +9,9 @@ main {
         box-shadow: $sombra;
         font-size: 20px;
     }
+    .carousel-inner{
+        box-shadow: $sombra;
+    }
 
     header {
 
@@ -16,7 +19,7 @@ main {
             font-size: 20px;
             text-align: center;
             background-color: $color-principal;
-            border-radius:$border;
+            border-radius: $border;
             box-shadow: $sombra;
 
 
@@ -61,7 +64,7 @@ main {
         h2 {
             text-align: center;
             background-color: $color-principal;
-            border-radius:$border;
+            border-radius: $border;
             margin: 20px;
             box-shadow: $sombra;
 
@@ -104,13 +107,13 @@ footer {
             height: 20px;
 
             .imgIns {
-                @include medidas (50px , 50px, 10px);
-               
+                @include medidas (50px, 50px, 10px);
+
 
             }
 
             .imgF {
-                @include medidas (50px , 50px, 10px);
+                @include medidas (50px, 50px, 10px);
 
             }
 
@@ -122,13 +125,13 @@ footer {
             height: 20px;
 
             .visa {
-                @include medidas (50px , 50px, 10px);
+                @include medidas (50px, 50px, 10px);
 
 
             }
 
             .mae {
-                @include medidas (50px , 50px, 10px);
+                @include medidas (50px, 50px, 10px);
 
             }
 
@@ -287,6 +290,38 @@ footer {
 
 
 }
+
+/*nosotros*/
+//mobile
+main {
+    .quienes {
+        text-align: center;
+        background-color: $color-principal;
+        margin: 2rem;
+        border-radius: $border;
+        box-shadow: $sombra;
+
+    }
+
+    div {
+        .containerImg {
+
+            .local {
+                border-radius: $border;
+                width: 100%;
+                box-shadow: $sombra
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
 /*productos*/
 //mobile
 main {
@@ -295,19 +330,20 @@ main {
             height: 100%;
             width: 100%;
         }
-         @include grid (grid, 20px, 20px);
-         
-         border-radius:$border;
+
+        @include grid (grid, 20px, 20px);
+
+        border-radius:$border;
         gap: 4rem;
         justify-content: center;
         grid-template-areas: "imgP1 imgP2"
-                             "pp1  pp2"
-                             "imgP3  imgP4"
-                             "pp3  pp4";
+        "pp1  pp2"
+        "imgP3  imgP4"
+        "pp3  pp4";
 
         .imgP1 {
             grid-area: imgP1;
-            border-radius:$border;
+            border-radius: $border;
             box-shadow: $sombra;
         }
 
@@ -354,59 +390,59 @@ main {
         .containerP {
 
             @include grid (grid, 20px, 20px);
-              grid-template-columns: 20% 20% 20% 20%;
-             grid-template-areas: "imgP1 imgP2 imgP3 imgP4"
-                                  "pp1  pp2   pp3   pp4";
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-areas: "imgP1 imgP2 imgP3 imgP4"
+                "pp1  pp2   pp3   pp4";
 
             background-color: $color-secundario;
             border-radius: 20px;
             height: 700px;
-            overflow: auto;
+
             .imgP1 {
                 grid-area: imgP1;
-                
-                                
-              }
-            
+
+
+            }
+
             .pp1 {
                 grid-area: pp1;
-            
-                
-            
+
+
+
             }
-            
+
             .imgP2 {
                 grid-area: imgP2;
-                
-            
-            
+
+
+
             }
-            
+
             .pp2 {
                 grid-area: pp2;
-                
+
             }
-            
+
             .imgP3 {
                 grid-area: imgP3;
-                
-            
+
+
             }
-            
+
             .pp3 {
                 grid-area: pp3;
-                
+
             }
-            
+
             .imgP4 {
                 grid-area: imgP4;
-                
+
             }
-            
+
             .pp4 {
                 grid-area: pp4;
-                
-            
+
+
             }
 
         }
@@ -498,7 +534,7 @@ main {
                     margin-top: 50px;
 
                     li {
-                        
+
                         .fb {
                             height: 80px;
                             width: 80px;
@@ -524,41 +560,109 @@ main {
     }
 
 }
-@media screen and (min-width:1024px){
-    main{
-        .divP2{
-            .containerFr{
+
+@media screen and (min-width:1024px) {
+    main {
+        .divP2 {
+            .containerFr {
                 width: 30rem;
             }
-            .redesContacto{
+
+            .redesContacto {
                 margin-top: 1rem;
+
                 h2 {
 
                     margin-left: 8rem;
-                    
+
                 }
-                ul{
-                    li{
+
+                ul {
+                    li {
                         .fb {
                             height: 100px;
                             width: 100px;
                             margin-left: 8rem;
                             margin-top: 80px;
-                                               
+
                         }
-                        
-                        
-                        
-                        .ins{
+
+
+
+                        .ins {
                             height: 100px;
                             width: 100px;
                             margin-left: 8rem;
-                            
-                            
+
+
                         }
                     }
                 }
             }
+        }
+    }
+}
+
+/*carrito*/
+//mobil
+main {
+    .containerTodo {
+        .container1F {
+            text-align: center;
+            background-color: $color-principal;
+            border-radius: $border;
+            margin-top: 1rem;
+            font-size: 20px;
+            
+        }
+        .form1{
+            display:flex;
+            justify-content: center;
+            
+            
+            form{
+                background-color: $color-principal;
+                font-size: 25px;
+                border-radius: $border;
+                box-shadow: $sombra;
+                
+                fieldset{
+                   legend{
+                       text-align: center;
+                       font-size:30px;
+                       
+                   }
+                   div{
+                       .botones{
+                           margin:10px;
+                           
+                       }
+                       .botones:hover{
+                           background-color: burlywood;
+                       }
+                           
+                       
+                   }
+                }
+            }
+        }
+        .container2F{
+           @extend .container1F;
+           
+        }
+        .form2{
+               @extend .form1;
+               
+        }
+
+        .paso3{
+            @include formulario( 25px, $color-principal,1rem,center,$border,$sombra)
+            
+        }
+        .paso4{
+            @include formulario( 25px, $color-principal,1rem,center,$border,$sombra)
+            
+
         }
     }
 }
