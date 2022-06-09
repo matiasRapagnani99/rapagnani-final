@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*index*/
 main p {
-  background-color: #cfcccc;
+  background-color: rgba(207, 204, 204, 0.5);
   margin: 20px;
   text-align: center;
   border-radius: 10px;
@@ -18,7 +18,7 @@ main .carousel-inner {
 main header p {
   font-size: 20px;
   text-align: center;
-  background-color: #ffc3ac;
+  background-color: rgba(255, 195, 172, 0.5);
   border-radius: 20px;
   -webkit-box-shadow: 0 10px 10px #494949;
           box-shadow: 0 10px 10px #494949;
@@ -26,7 +26,7 @@ main header p {
 
 main header h1 {
   font-size: 60px;
-  background-color: #ffc3ac;
+  background-color: rgba(255, 195, 172, 0.5);
   margin: 30px;
   text-align: center;
   -webkit-box-shadow: 0 10px 10px #494949;
@@ -39,14 +39,15 @@ main header h1 {
 main header nav ul {
   font-size: 25px;
   text-align: center;
+  text-decoration: underline;
 }
 
 main header .bg-propio {
-  background-color: #ffc3ac;
+  background-color: rgba(255, 195, 172, 0.5);
 }
 
 main .sectionI {
-  background-color: #cfcccc;
+  background-color: rgba(207, 204, 204, 0.5);
   text-align: center;
   font-size: 20px;
   padding: 10px;
@@ -56,7 +57,7 @@ main .sectionI {
 
 main .sectionI h2 {
   text-align: center;
-  background-color: #ffc3ac;
+  background-color: rgba(255, 195, 172, 0.5);
   border-radius: 20px;
   margin: 20px;
   -webkit-box-shadow: 0 10px 10px #494949;
@@ -79,7 +80,7 @@ footer .containerF {
 }
 
 footer .containerF strong {
-  background-color: #ffc3ac;
+  background-color: rgba(255, 195, 172, 0.5);
   border-radius: 10px;
   text-align: center;
   display: block;
@@ -117,13 +118,14 @@ footer .containerF .redes .imgF {
 
 footer .containerF .pagos {
   -ms-grid-row: 1;
-  -ms-grid-column: 4;
+  -ms-grid-column: 3;
   grid-area: pagos;
+  -ms-grid-column-align: end;
       justify-self: end;
   height: 20px;
 }
 
-footer .containerF .pagos .visa, footer .containerF .pagos .mae, footer .containerF .pagos .am {
+footer .containerF .pagos .visa {
   height: 50px;
   width: 50px;
   margin: 10px;
@@ -168,8 +170,8 @@ footer .containerF .contacto {
   footer .containerF .ubicacion {
     margin-right: 30px;
   }
-  footer .containerF iframe {
-    margin-right: 30px;
+  footer .containerF .ubicacion iframe {
+    margin-left: 30px;
   }
 }
 
@@ -189,42 +191,81 @@ footer .containerF .contacto {
   }
   main header nav ul li:hover {
     margin: 10px;
+    padding: 1px;
+    font-weight: bold;
   }
   main p {
     font-size: 28px;
     margin: 50px;
   }
-}
-
-footer .containerF {
-      grid-template-areas: "ubicacion contacto redes pagos";
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
-  height: 250px;
-}
-
-footer .containerF .contacto {
-  display: block;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  margin-left: 80px;
-}
-
-footer .containerF .contacto .imgX {
-  height: 60px;
-  width: 60px;
-  margin: 10px;
-}
-
-footer .containerF .pagos .visa, footer .containerF .pagos .mae, footer .containerF .pagos .am {
-  height: 60px;
-  width: 60px;
+  footer .containerF {
+        grid-template-areas: "ubicacion contacto redes pagos";
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+    height: 250px;
+  }
+  footer .containerF .ubicacion {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: ubicacion;
+  }
+  footer .containerF .ubicacion iframe {
+    margin-left: 30px;
+  }
+  footer .containerF .contacto {
+    display: inline-block;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-left: 80px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: contacto;
+  }
+  footer .containerF .contacto .imgX {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+  }
+  footer .containerF .pagos {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: pagos;
+    width: 70%;
+  }
+  footer .containerF .pagos strong {
+    margin-left: 20px;
+  }
+  footer .containerF .pagos ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .containerF .pagos ul li .visa {
+    height: 60px;
+    width: 60px;
+  }
+  footer .containerF .pagos ul li .mae {
+    height: 60px;
+    width: 60px;
+  }
+  footer .containerF .pagos ul li .am {
+    height: 60px;
+    width: 60px;
+  }
+  footer .containerF .redes {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: redes;
+  }
 }
 
 /*nosotros*/
 main .quienes {
   text-align: center;
-  background-color: #ffc3ac;
+  background-color: rgba(255, 195, 172, 0.5);
   margin: 2rem;
   border-radius: 20px;
   -webkit-box-shadow: 0 10px 10px #494949;
@@ -282,9 +323,6 @@ main .containerP .pp2 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: pp2;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 main .containerP .imgP3 {
@@ -297,9 +335,6 @@ main .containerP .pp3 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: pp3;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 main .containerP .imgP4 {
@@ -323,7 +358,7 @@ main .containerP .pp4 {
     -ms-grid-columns: 20% 20% 20% 20%;
         grid-template-columns: 20% 20% 20% 20%;
         grid-template-areas: "imgP1 imgP2 imgP3 imgP4" "pp1  pp2   pp3   pp4";
-    background-color: #cfcccc;
+    background-color: rgba(207, 204, 204, 0.5);
     border-radius: 20px;
     height: 700px;
   }
@@ -346,6 +381,9 @@ main .containerP .pp4 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: pp2;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   main .containerP .imgP3 {
     -ms-grid-row: 1;
@@ -356,6 +394,9 @@ main .containerP .pp4 {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     grid-area: pp3;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   main .containerP .imgP4 {
     -ms-grid-row: 1;
@@ -379,7 +420,7 @@ main .divP2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: #cfcccc;
+  background-color: rgba(207, 204, 204, 0.5);
   border-radius: 20px;
   margin: 3px;
   margin-top: 20px;
@@ -400,7 +441,7 @@ main .divP2 .containerFr .tamañoF {
 }
 
 main .divP2 .containerFr fieldset {
-  background-color: #ffc3ac;
+  background-color: rgba(255, 195, 172, 0.5);
 }
 
 main .divP2 .redesContacto {
@@ -433,7 +474,7 @@ main .divP2 .redesContacto ul .ins {
   }
   main .divP2 .redesContacto h2 {
     margin-left: 6rem;
-    background-color: #ffc3ac;
+    background-color: rgba(255, 195, 172, 0.5);
     display: inline;
   }
   main .divP2 .redesContacto ul {
@@ -477,7 +518,7 @@ main .divP2 .redesContacto ul .ins {
 /*carrito*/
 main .containerTodo .container1F, main .containerTodo .container2F {
   text-align: center;
-  background-color: #ffc3ac;
+  background-color: rgba(255, 195, 172, 0.5);
   border-radius: 20px;
   margin-top: 1rem;
   font-size: 20px;
@@ -493,7 +534,7 @@ main .containerTodo .form1, main .containerTodo .form2 {
 }
 
 main .containerTodo .form1 form, main .containerTodo .form2 form {
-  background-color: #ffc3ac;
+  background-color: rgba(255, 195, 172, 0.5);
   font-size: 25px;
   border-radius: 20px;
   -webkit-box-shadow: 0 10px 10px #494949;
@@ -515,7 +556,7 @@ main .containerTodo .form1 form fieldset div .botones:hover, main .containerTodo
 
 main .containerTodo .paso3 {
   font-size: 25px;
-  background-color: #ffc3ac;
+  background-color: rgba(255, 195, 172, 0.5);
   margin-top: 1rem;
   text-align: center;
   border-radius: 20px;
@@ -525,7 +566,7 @@ main .containerTodo .paso3 {
 
 main .containerTodo .paso4 {
   font-size: 25px;
-  background-color: #ffc3ac;
+  background-color: rgba(255, 195, 172, 0.5);
   margin-top: 1rem;
   text-align: center;
   border-radius: 20px;
@@ -547,7 +588,7 @@ body a {
 }
 
 body .derechos {
-  background-color: #cfcccc;
+  background-color: rgba(207, 204, 204, 0.5);
   text-align: center;
 }
 
