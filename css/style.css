@@ -1,5 +1,12 @@
 @charset "UTF-8";
 /*index*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 main p {
   background-color: rgba(207, 204, 204, 0.5);
   margin: 20px;
@@ -300,6 +307,13 @@ footer .containerF .contacto {
 }
 
 /*productos*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 main .containerP {
   display: -ms-grid;
   display: grid;
@@ -425,6 +439,13 @@ main .containerP .pp4 {
 }
 
 /*mobile*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 main .divP2 {
   display: -ms-grid;
   display: grid;
@@ -534,6 +555,13 @@ main .divP2 .redesContacto ul .ins {
 }
 
 /*carrito*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 main .containerTodo .container1F, main .containerTodo .container2F {
   text-align: center;
   background-color: rgba(255, 195, 172, 0.5);
@@ -593,6 +621,13 @@ main .containerTodo .paso4 {
 }
 
 /*nosotros*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 main .quienes {
   text-align: center;
   background-color: rgba(255, 195, 172, 0.5);
