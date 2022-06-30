@@ -1,0 +1,157 @@
+/*mobile*/
+//contacto
+main {
+    .divP2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "formulario redes";
+        justify-content: space-evenly;
+        background-color: $color-secundario;
+        border-radius: 20px;
+        margin: 3px;
+        margin-top: 20px;
+
+        /*estilo formulario*/
+        .containerFr {
+
+            width: 100%;
+            margin-left: 50px;
+            grid-area: formulario;
+            height: 100%;
+            margin: 1rem;
+
+            .tamañoF {
+                width: 100%;
+
+            }
+
+            fieldset {
+                background-color: $color-principal
+            }
+
+
+        }
+         /*estilo redes*/
+        .redesContacto {
+            grid-area: redes;
+
+            h2 {
+                margin-bottom: 30px;
+                margin-left: 2rem;
+
+            }
+
+            ul {
+                .fb {
+                    height: 60px;
+                    width: 60px;
+                    margin-left: 2rem;
+                    margin-top: 40px;
+
+
+                }
+
+                .ins {
+                    height: 60px;
+                    width: 60px;
+
+                    margin-left: 2rem;
+
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    main {
+        .divP2 {
+            font-size: 25px;
+
+            .redesContacto {
+                h2 {
+
+                    margin-left: 6rem;
+                    background-color: $color-principal;
+                    display: inline;
+
+                }
+
+                ul {
+                    margin-top: 50px;
+
+                    li {
+
+                        .fb {
+                            height: 80px;
+                            width: 80px;
+                            margin-left: 6rem;
+
+
+
+                        }
+
+                        .ins {
+                            height: 80px;
+                            width: 80px;
+                            margin-left: 6rem;
+
+
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    main {
+        .divP2 {
+            .containerFr {
+                width: 30rem;
+                margin-left: 10rem;
+            }
+
+            .redesContacto {
+                margin-top: 1rem;
+                
+
+                h2 {
+
+                    margin-left: 8rem;
+                    border-radius: $border;
+                    
+                    
+
+                }
+
+                ul {
+                    li {
+                        .fb {
+                            height: 100px;
+                            width: 100px;
+                            margin-left: 8rem;
+                            margin-top: 80px;
+
+                        }
+
+
+
+                        .ins {
+                            height: 100px;
+                            width: 100px;
+                            margin-left: 8rem;
+
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

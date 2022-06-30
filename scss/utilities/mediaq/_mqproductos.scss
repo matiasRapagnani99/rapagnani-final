@@ -1,0 +1,130 @@
+/*productos*/
+//mobile
+main {
+    .containerP {
+        .imgT {
+            height: 100%;
+            width: 100%;
+        }
+
+        @include grid (grid, 20px, 20px);
+
+        border-radius:$border;
+        gap: 4rem;
+        justify-content: center;
+        grid-template-areas: "imgP1 imgP2"
+                             "pp1  pp2"
+                             "imgP3  imgP4"
+                             "pp3  pp4";
+
+        .imgP1 {
+            grid-area: imgP1;
+            border-radius: $border;
+            box-shadow: $sombra;
+        }
+
+        .pp1 {
+            grid-area: pp1;
+            
+            
+        }
+
+        .imgP2 {
+            @extend .imgP1;
+            grid-area: imgP2;
+        }
+
+        .pp2 {
+            grid-area: pp2;
+            
+            
+
+        }
+
+        .imgP3 {
+            @extend .imgP1;
+            grid-area: imgP3;
+        }
+
+        .pp3 {
+            grid-area: pp3;
+
+        }
+
+        .imgP4 {
+            @extend .imgP1;
+            grid-area: imgP4;
+        }
+
+        .pp4 {
+            grid-area: pp4;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    main {
+
+        .containerP {
+
+            @include grid (grid, 20px, 20px);
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-areas: "imgP1 imgP2 imgP3 imgP4"
+                "pp1  pp2   pp3   pp4";
+
+            background-color: $color-secundario;
+            border-radius: 20px;
+            height: 700px;
+
+            .imgP1 {
+                grid-area: imgP1;
+                
+
+
+            }
+
+            .pp1 {
+                grid-area: pp1;
+
+
+            }
+
+            .imgP2 {
+                grid-area: imgP2;
+
+            }
+
+            .pp2 {
+                grid-area: pp2;
+                
+
+            }
+
+            .imgP3 {
+                grid-area: imgP3;
+
+
+            }
+
+            .pp3 {
+                grid-area: pp3;
+               
+
+            }
+
+            .imgP4 {
+                grid-area: imgP4;
+
+            }
+
+            .pp4 {
+                grid-area: pp4;
+
+
+            }
+
+        }
+    }
+
+}

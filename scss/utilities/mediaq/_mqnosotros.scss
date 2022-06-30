@@ -1,0 +1,58 @@
+/*nosotros*/
+//mobile
+main {
+    .quienes {
+        text-align: center;
+        background-color: $color-principal;
+        margin: 2rem;
+        border-radius: $border;
+        box-shadow: $sombra;
+
+    }
+    .gracias{
+        display:none;
+    }
+    
+    
+}
+
+@media screen and (min-width:768px){
+    main{
+        .gracias{
+            text-align: center;
+            background-color: $color-principal;
+            display: block;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+    }
+    
+}
+
+@media screen and (min-width:1024px){
+    main{
+        .nosotros{
+           .local{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .localImg{
+                width: 80%;
+                height: 80%;
+                border-radius: $border;
+                box-shadow: $sombra;
+            }
+           }
+
+        }
+        .gracias{
+            text-align: center;
+            background-color: $color-principal;
+            display: block;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+    }
+}

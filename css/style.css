@@ -65,6 +65,7 @@ main .sectionI h2 {
 }
 
 footer .containerF {
+  background-color: rgba(207, 204, 204, 0.5);
       grid-template-areas: "ubicacion redes pagos";
   -ms-grid-columns: 33% 33% 33%;
       grid-template-columns: 33% 33% 33%;
@@ -157,6 +158,9 @@ footer .containerF .contacto {
   main .sectionI h2 {
     font-size: 40px;
   }
+  footer .containerF {
+    background-color: rgba(207, 204, 204, 0.5);
+  }
   footer .containerF .redes {
     margin-left: 30px;
     margin-left: 100px;
@@ -168,7 +172,7 @@ footer .containerF .contacto {
     margin-right: 30px;
   }
   footer .containerF .ubicacion {
-    margin-right: 30px;
+    margin-left: 30px;
   }
   footer .containerF .ubicacion iframe {
     margin-left: 30px;
@@ -194,11 +198,38 @@ footer .containerF .contacto {
     padding: 1px;
     font-weight: bold;
   }
+  main .carrousel {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .carrousel .carousel {
+    width: 80%;
+    height: 80%;
+  }
+  main .carrousel .carousel .carousel-item .imgCadenaa {
+    width: 20%;
+    height: 100%;
+  }
+  main .carrousel .carousel .carousel-item .imgAros {
+    width: 20%;
+    height: 100%;
+  }
+  main .carrousel .carousel .carousel-item .imgManofrida {
+    width: 20%;
+    height: 100%;
+  }
   main p {
     font-size: 28px;
     margin: 50px;
   }
   footer .containerF {
+    background-color: rgba(207, 204, 204, 0.5);
         grid-template-areas: "ubicacion contacto redes pagos";
     -ms-grid-columns: 25% 25% 25% 25%;
         grid-template-columns: 25% 25% 25% 25%;
@@ -208,9 +239,13 @@ footer .containerF .contacto {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: ubicacion;
+    margin-left: 20px;
+    font-size: 20px;
   }
   footer .containerF .ubicacion iframe {
     margin-left: 30px;
+    width: 70%;
+    height: 70%;
   }
   footer .containerF .contacto {
     display: inline-block;
@@ -220,6 +255,7 @@ footer .containerF .contacto {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: contacto;
+    font-size: 20px;
   }
   footer .containerF .contacto .imgX {
     height: 60px;
@@ -234,6 +270,7 @@ footer .containerF .contacto {
   }
   footer .containerF .pagos strong {
     margin-left: 20px;
+    font-size: 20px;
   }
   footer .containerF .pagos ul li {
     display: -webkit-box;
@@ -260,23 +297,6 @@ footer .containerF .contacto {
     -ms-grid-column: 2;
     grid-area: redes;
   }
-}
-
-/*nosotros*/
-main .quienes {
-  text-align: center;
-  background-color: rgba(255, 195, 172, 0.5);
-  margin: 2rem;
-  border-radius: 20px;
-  -webkit-box-shadow: 0 10px 10px #494949;
-          box-shadow: 0 10px 10px #494949;
-}
-
-main div .containerImg .local {
-  border-radius: 20px;
-  width: 100%;
-  -webkit-box-shadow: 0 10px 10px #494949;
-          box-shadow: 0 10px 10px #494949;
 }
 
 /*productos*/
@@ -381,9 +401,6 @@ main .containerP .pp4 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: pp2;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
   }
   main .containerP .imgP3 {
     -ms-grid-row: 1;
@@ -394,9 +411,6 @@ main .containerP .pp4 {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     grid-area: pp3;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
   }
   main .containerP .imgP4 {
     -ms-grid-row: 1;
@@ -424,6 +438,8 @@ main .divP2 {
   border-radius: 20px;
   margin: 3px;
   margin-top: 20px;
+  /*estilo formulario*/
+  /*estilo redes*/
 }
 
 main .divP2 .containerFr {
@@ -495,12 +511,14 @@ main .divP2 .redesContacto ul .ins {
 @media screen and (min-width: 1024px) {
   main .divP2 .containerFr {
     width: 30rem;
+    margin-left: 10rem;
   }
   main .divP2 .redesContacto {
     margin-top: 1rem;
   }
   main .divP2 .redesContacto h2 {
     margin-left: 8rem;
+    border-radius: 20px;
   }
   main .divP2 .redesContacto ul li .fb {
     height: 100px;
@@ -521,7 +539,7 @@ main .containerTodo .container1F, main .containerTodo .container2F {
   background-color: rgba(255, 195, 172, 0.5);
   border-radius: 20px;
   margin-top: 1rem;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 main .containerTodo .form1, main .containerTodo .form2 {
@@ -572,6 +590,58 @@ main .containerTodo .paso4 {
   border-radius: 20px;
   -webkit-box-shadow: 0 10px 10px #494949;
           box-shadow: 0 10px 10px #494949;
+}
+
+/*nosotros*/
+main .quienes {
+  text-align: center;
+  background-color: rgba(255, 195, 172, 0.5);
+  margin: 2rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 10px #494949;
+          box-shadow: 0 10px 10px #494949;
+}
+
+main .gracias {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main .gracias {
+    text-align: center;
+    background-color: rgba(255, 195, 172, 0.5);
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .nosotros .local {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .nosotros .local .localImg {
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 10px 10px #494949;
+            box-shadow: 0 10px 10px #494949;
+  }
+  main .gracias {
+    text-align: center;
+    background-color: rgba(255, 195, 172, 0.5);
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
 }
 
 body {
